@@ -700,9 +700,9 @@ section {
   letter-spacing: 0.48px;
 }
 .modal-form-checkbox {
-  display: inline-flex;
   align-items: center;
   justify-content: center;
+  display: inline-flex;
   fill: transparent;
   width: 16px;
   height: 16px;
@@ -716,7 +716,7 @@ section {
 
 input[type="checkbox"]:checked + .modal-form-desc > .modal-form-checkbox {
   border: none;
-  fill: var(--ocean);
+  fill: var(--cloud);
   background-color: var(--ocean);
 }
 /* input[type="checkbox"]:focus-visible + .modal-form-desc > .modal-form-checkbox {
