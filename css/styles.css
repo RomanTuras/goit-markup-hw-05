@@ -516,9 +516,12 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
   min-width: 165px;
   height: 40px;
+}
+
+.subscribe-form .btn-icon {
+  margin-left: 16px;
 }
 
 /* Modal */
@@ -562,10 +565,11 @@ section {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   transition-duration: var(--anim-duration);
   transition-timing-function: var(--anim-timing-function);
-  transition-property: opacity;
+  transition-property: opacity, transform;
 }
 .backdrop.is-open .modal {
   opacity: 1;
+  transform: translate(-50%, -50%);
 }
 .modal-close-btn {
   position: absolute;
@@ -613,7 +617,7 @@ section {
 .modal-form-field {
   margin-bottom: 8px;
 }
-.modal-form-field:last-child {
+.modal-form-field:has(textarea) {
   margin-bottom: 16px;
 }
 .modal-form-label {
@@ -712,12 +716,13 @@ section {
   border: 1px solid var(--navy-blue-modal);
   transition-duration: var(--anim-duration);
   transition-timing-function: var(--anim-timing-function);
-  transition-property: border, background-color;
+  transition-property: border, background-color, fill;
 }
 
 input[type="checkbox"]:checked + .modal-form-desc > .modal-form-checkbox {
   border: none;
   fill: var(--ocean);
+  background-color: var(--ocean);
 }
 input[type="checkbox"]:focus-visible + .modal-form-desc > .modal-form-checkbox {
   box-shadow: 0 0 0 3px rgb(var(--accent-cl) / 25%);
