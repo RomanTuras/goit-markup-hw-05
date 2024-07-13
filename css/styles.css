@@ -209,7 +209,7 @@ section {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("/images/hero/office.jpg");
+    url("../images/hero/office.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
