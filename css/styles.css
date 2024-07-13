@@ -512,6 +512,15 @@ section {
   color: var(--white);
 }
 
+.subscribe-form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 165px;
+  height: 40px;
+}
+
 /* Modal */
 
 /* #region Modal window*/
