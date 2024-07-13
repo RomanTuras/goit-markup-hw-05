@@ -690,7 +690,6 @@ section {
   margin-bottom: 24px;
 }
 .modal-form-desc {
-  display: flex;
   align-items: center;
   color: var(--light-slate);
   font-size: 12px;
