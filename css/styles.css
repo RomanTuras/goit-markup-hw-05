@@ -713,15 +713,11 @@ section {
   transition-timing-function: var(--anim-timing-function);
   transition-property: border, background-color, fill;
 }
-
 input[type="checkbox"]:checked + .modal-form-desc > .modal-form-checkbox {
   border: none;
   fill: var(--cloud);
   background-color: var(--ocean);
 }
-/* input[type="checkbox"]:focus-visible + .modal-form-desc > .modal-form-checkbox {
-  box-shadow: 0 0 0 3px rgb(var(--accent-cl) / 25%);
-} */
 .modal-form-link {
   color: var(--iris);
   text-decoration: underline;
