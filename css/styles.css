@@ -561,15 +561,10 @@ section {
   padding: 72px 24px 24px 24px;
   background: var(--dairy);
   border-radius: 4px;
-  opacity: 0;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   transition-duration: var(--anim-duration);
   transition-timing-function: var(--anim-timing-function);
-  transition-property: opacity, transform;
-}
-.backdrop.is-open .modal {
-  opacity: 1;
-  transform: translate(-50%, -50%);
+  transition-property: transform;
 }
 .modal-close-btn {
   position: absolute;
@@ -724,9 +719,9 @@ input[type="checkbox"]:checked + .modal-form-desc > .modal-form-checkbox {
   fill: var(--ocean);
   background-color: var(--ocean);
 }
-input[type="checkbox"]:focus-visible + .modal-form-desc > .modal-form-checkbox {
+/* input[type="checkbox"]:focus-visible + .modal-form-desc > .modal-form-checkbox {
   box-shadow: 0 0 0 3px rgb(var(--accent-cl) / 25%);
-}
+} */
 .modal-form-link {
   color: var(--iris);
   text-decoration: underline;
